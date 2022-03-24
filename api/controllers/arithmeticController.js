@@ -17,6 +17,7 @@ exports.calculate = function(req, res) {
     'divide':   function(a,b) { return a / b },
   };
 
+  // Using + operator to type cast variables as integers in order to prevent string concatenation
   // Determine the operation
 
   if (! req.query.operation) {
